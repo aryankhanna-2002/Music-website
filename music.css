@@ -1,0 +1,380 @@
+/* debug*/
+*{ 
+    
+}
+/* animations */
+
+@keyframes bell{
+    from{ 
+       transform:rotate(-30deg);
+    }
+    to{ transform: rotate(30deg);
+    }
+}
+@keyframes logo{
+    from{opacity:1;
+        transform: scale(1,1);
+    
+    }
+       
+    to {opacity:.5;
+        transform: scale(.8,.8);
+    
+    }
+        
+        
+    
+    
+    
+}
+/* MAIN BODY */
+body{
+    background-image: url(MAINPICS/bgimage.jpg);
+    background-attachment:fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height:auto;
+    width:auto;
+  
+
+}
+/* HEADER STYLING */
+header{
+    width:100%;
+    height:13%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    margin-bottom: 30px;
+    position:fixed;
+    top: 0;
+    left:-5PX;
+    z-index: 1;
+    background-image: url("MAINPICS/bgimage.jpg");
+    
+    
+}
+
+.songeng{
+    color:white;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 6px 6px 6px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1.5em;
+}
+
+/* music logo*/
+#logo{
+    animation-name: logo;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+/* main heading*/
+#log{
+    color:gold;
+    font-size:x-large;
+    text-decoration-color: black;
+    text-decoration: underline;
+    box-sizing:content-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
+   
+
+    
+}
+
+/* search bar
+
+
+*/
+#search{
+    
+    background-image: linear-gradient(rgba(0, 255, 255, 0.295),rgba(251, 255, 0, 0.336));
+    border: none;
+    padding:0px,15px;
+    border:2px  solid snow;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    
+
+    
+
+}
+        /* SEARCH BAR SIZING */
+    #searchboxtable{
+        padding:0px;
+        background-color:black;
+        border-radius:50px;
+        width:400px;
+        position: relative;
+        
+    
+    }
+    /* SEARCH BAR FOCUS */
+        #search:focus{
+            outline: none;
+            font-size:large;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight:bold;
+        }
+
+/* heading bell icon*/
+#bell{
+    position: relative;
+  
+    
+
+}
+/* bell icon animation*/
+#bi{
+    animation-name: bell;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/* PROFILE PIC */
+#profile{
+    
+    position: relative;
+    
+}
+/* left side
+of web page
+ */
+#main{
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction:column;
+    height:100%;
+    width:65%;
+    border-right: 3px double aqua;
+    position: relative;
+    top: 100PX;
+
+}
+
+/* sections in !! main !! INCLUDING HINDI ENGLISH AND SINGERS*/
+.SECTION{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    
+}
+
+/* IMAGE CONTAINER DIVS FOR HINDI ENGLISH AND TOP CHARTS */
+.english{
+   height: auto;
+   width: auto;
+}
+/* all images inside  english hindi and top charts*/
+    .engimg{
+        height: 180px;
+        width: 220px;
+        border: 3px solid snow;
+        
+
+    }
+        .engimg:hover{
+            transform: translate(8px,8px) ;
+            border: 5px solid white;
+            opacity: .9;
+            filter: grayscale(1) brightness(1);
+            transition-duration:.5s;
+            transform: scale(1.4,1.4) rotate(360deg);
+            border-radius: 50px;
+
+        }
+/* heading in hindi and english*/
+.heading{
+    color: snow;
+    height: 100%;
+    width: 100%;
+    font-family:cursive;
+    text-shadow:5px 5px 5px violet;
+    box-sizing: border-box;
+
+}
+
+/* pics decoration on top */
+.toppic{
+    height:250px;
+    width:300px;
+    margin-left:10px;
+    border: 3px solid gold;
+}
+marquee{
+    display: flex;
+    margin: 3px;
+    
+}
+/* AUTHOR PICS DIV */
+.author{
+    height:150px;
+    width: 150px;
+    border-radius:50px;
+    margin-bottom:10px;
+    margin-right:10px;
+    
+}
+    .authorimg{
+        height: 150px;
+        width:150px ;
+        border-radius:60px;
+        border: 6px solid purple;
+        
+    }
+        .authorimg:hover{
+            filter: brightness(2) ;
+            transition-duration: .5s;
+            transform: translate3d(10px,20px,30px) scale(1.5,1.5);
+
+        }
+
+/* aside a
+styling */
+aside{
+    display: flex;
+    height:610px;
+    flex-direction:column;
+    width:30%;
+    position:sticky;
+    top:100PX;
+    overflow:scroll;
+    
+    
+    
+
+}
+aside::-webkit-scrollbar{
+    display: none;
+}
+/* DIVS IN ASIDE STYLING */
+.right{
+    display: flex;
+    height:100px;
+    width:97%;
+    border:2px solid white;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(aqua, rgba(243, 7, 243, 0.637) 60%) ;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+   
+   
+}
+/* DIV FOR IMAGE */
+.asideimg{height: 90px;
+    width: 90px;
+    align-self: center;
+    margin: 10px;
+    border: 2px solid white;
+
+}
+    .asimage{
+        height:90px;
+        width:90px;
+    }
+    /* SONGS INFORMATION */
+.info{
+    height:80px;
+    width:auto;
+    color: rgb(238, 255, 0);
+    align-self: center;
+    font-family:cursive;
+    text-shadow: 5px 5px 5px white;
+    font-size: 1.2em;
+    text-align: left;
+    
+
+}
+/* LIKE DIV */
+.like{
+    align-self: center;
+
+}
+    /* LIKE IMAGE */
+    .likeimg{
+        height:60px;
+        width:60px;
+        border-radius:200px;
+        filter: brightness(1);
+        background-color: white;
+    }
+        /* LIKE IMAGES ON HOVER */
+        .likeimg:hover{
+            border: 5px solid rgb(255, 0, 43);
+            transition-duration:.5s ;
+
+        }
+/* STYLING FOR QUEUE MENU IN ASIDE */
+.drop{
+ color: rgb(255, 0, 255);
+ display: flex;
+
+}
+    .dpl{
+        display:none;
+        background-color: rgba(236, 236, 236, 0.938);
+        box-shadow: 10px 10px 10px black;
+        height:100px;
+        width:150px;
+        align-self: center;
+        transition-duration:.5s;
+        border:2px solid blue;
+
+        
+    }
+        .drop:hover .dpl{
+            display: block;
+            transition-duration:.5s ;
+        }
+/* ANCHOR TAG STYLING */
+a{
+    color: blue;
+    text-decoration: underline;
+    border-bottom:2px solid black ;
+}
+a:hover{
+    color:red;
+}
+.VOICE{
+    position: fixed;
+    bottom: 0%;
+    z-index: 2;
+    width: 100%;
+    left:-2PX;
+    height:30PX;
+    background-color: rgb(0, 0, 26);
+}
+.MORE{
+    position: fixed;
+    top:100px;
+    right:0%;
+    background-image: linear-gradient(aqua, orange);
+    height:30PX;
+    width:120PX;
+    font-size:1.5em;
+    font-style: italic;
+    font-family: cursive;
+    border-radius:5px;
+    border-color: deeppink;
+    display:none;
+
+
+}
+.MORE:active{
+   
+    transform: scale(1.3,1.3) skew(20DEG);
+}

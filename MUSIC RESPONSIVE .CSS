@@ -1,0 +1,103 @@
+@media screen and (max-width:1000px){
+    .toppic{
+        height:220px;
+        width:280px;
+        
+    }
+    .author{
+        height:120px;
+        width: 120px;
+       
+        
+    }
+        .authorimg{
+            height: 120px;
+            width:120px ;
+          
+            
+        }
+        .engimg{
+            height: 140px;
+            width: 190px;
+            
+    
+        }
+        .likeimg{
+            height:30px;
+            width:30px;
+            border-radius:200px;
+            filter: brightness(1);
+            background-color: white;
+        }
+}
+@media screen and (max-width:900px){
+    #log{
+        font-size:1em;
+
+    }
+    #searchboxtable{
+        
+        width:300px;
+        position: relative;
+        
+    
+    }
+    
+}
+@media screen and (max-width:680px){
+    aside{
+        display: none;
+
+    }
+    #main{ width:98%;
+        margin:10px;
+        padding:10px;
+
+    }
+    .MORE{
+        display: block;
+    }
+    #log{
+        font-size:.7em;
+    }
+}
+@media screen and (max-width:600px){
+    .toppic{
+        height:180px;
+        width:220px;
+        
+    }
+    .author{
+        height:100px;
+        width: 100px;
+       
+        
+    }
+        .authorimg{
+            height: 100px;
+            width:100px ;
+          
+            
+        }
+        .engimg{
+            height: 100px;
+            width: 140px;
+            
+    
+        }
+        header{
+            height:7%;
+        }
+        #searchboxtable{
+        
+            width:200px;
+            position: relative;
+            
+        
+        }
+        .songeng{
+            font-size:1em;
+        }
+
+
+}

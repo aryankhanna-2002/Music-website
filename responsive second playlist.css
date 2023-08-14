@@ -1,0 +1,145 @@
+@media screen and (max-width:1258px){
+  
+    /* SINGER INFO STYLING*/
+    #about{height: 500px;
+        width: 100%;
+           }
+    /* SINGER PICTURE*/
+    .abtimg{
+        height:200px;
+        width:50%;
+        align-self: center;
+        margin: 4px;
+        flex-shrink: 1;
+        }
+        .aboutimg{
+            height: 200px;
+            width:auto;
+            border: 3px dashed white;
+            
+        }
+    /* INFO ABOUT SINGER */
+    .stiches{
+        
+        font-size: 1em;
+        overflow: auto;
+        flex-shrink:7;
+}
+    .ok{
+        font-size: 1em;
+    }
+    /* PLAY BUTTON*/
+    #BUT{
+        height:50PX;
+        width:100PX;
+    }
+                .imgaside{
+    
+                height:90px;
+                width: 90px;
+            }   /* IMAGE ITSELF*/
+                .s1{
+                    height:90px;
+                    width:90px;
+                    border:4px solid rgb(0, 0, 0);
+                }
+                /* SONG NAME*/
+            .songname{
+                font-size:1em;
+                
+    
+        }
+    }
+
+@media screen and (max-width:1099px){
+    .songname{
+        font-size:.8em;
+        
+        }
+        .imgaside{
+    
+            height:70px;
+            width: 70px;
+        }   /* IMAGE ITSELF*/
+            .s1{
+                height:70px;
+                width:70px;
+                border:4px solid rgb(0, 0, 0);
+            }
+
+}
+@media screen and (max-width:904px){
+
+    #log{
+        color:gold;
+        font-size:1em;
+    
+        
+    
+    }
+    /* SEARCH BAR ON FOCUS*/
+   
+    #searchboxtable{
+
+        width:350px;
+        position: relative;
+        
+     
+    }
+
+    .info{
+        font-family: cursive;
+        font-stretch: wider;
+        letter-spacing:.3em;
+        font-size:1.3em;
+    }
+    /* sections in !! main !!*/
+    
+    
+    /* aside a
+    styling */
+    
+       
+                /* DIVS IN ASIDE*/
+     
+          
+
+}
+@media screen and (max-width:851px)
+{
+
+
+    
+    aside{
+        display: none;
+    }
+    #main{
+        width: 90%;
+    }
+    .stiches{
+       
+        font-size: .9em;
+        overflow: auto;
+        flex-shrink:7;
+}
+#log{
+    color:gold;
+    font-size:.6em;
+   
+}
+#searchboxtable{
+    padding:0px;
+    background-color:black;
+    border-radius:50px;
+    width:180px;
+    position: relative;
+    
+ 
+}
+header{
+    width:100%;
+    height:6%;
+    
+    
+}
+}
